@@ -13,6 +13,9 @@ class Application (Tk):
 
     def dessiner(self):
         self.w1= Wagon(self.can,10,30)
+        self.w2= Wagon(self.can,145,30)
+        self.w2= Wagon(self.can,280,30)
+        self.w2= Wagon(self.can,415,30)
 
 
 class Wagon():
@@ -22,7 +25,7 @@ class Wagon():
         self.y = y
         can.create_rectangle(x,y,x+110,y+60)
         for i in range (x+5,x+86,35):
-            can.create_rectangle(i,y+5,x+30,y+40)
+            can.create_rectangle(i,y+5,i+30,y+40)
         cercle (can , x+20,y+70,10)
         cercle (can , x+90,y+70,10)
     
