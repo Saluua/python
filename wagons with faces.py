@@ -18,9 +18,12 @@ class Application (Tk):
         self.w3= Wagon(self.can,280,30)
         self.w4= Wagon(self.can,415,30)
     def dessiner_personne (self):
-            self.w1.personne(1)
-            self.w2.personne(2)
+            self.w1.personne(2)
+            self.w3.personne(1)
             self.w3.personne(3)
+            self.w4.personne(1)
+            self.w4.personne(2)
+            self.w4.personne(3)
 
 
 class Wagon():
