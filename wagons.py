@@ -13,7 +13,7 @@ def rectangle (can,x,y,larg,long):
 
 def dessiner_wagon (can, x,y,larg,long) :
     rectangle(can,x,y,larg,long)
-    for i in range (x+5,larg-24,35):
+    for i in range (x+5,x+larg-24,35):
         rectangle(can,i,y+5,30,35)
         
     cercle (can , x+20,y+70,10)
